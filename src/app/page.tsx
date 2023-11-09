@@ -18,7 +18,7 @@ export default function Home() {
         </div>
 
         <div className="lg:max-w-[1280px] mx-auto relative flex z-20 px-8 mb-24 move-in">
-          <div className="lg:ml-16 bg-red-500 text-white w-[200px] flex items-center justify-center py-5 font-medium cursor-pointer">
+          <div className="lg:ml-16 bg-red-500 text-white w-[200px] flex items-center justify-center py-5 transition-all font-medium cursor-pointer hover:saturate-100 hover:translate-x-1 hover:-translate-y-1">
             Contactanos
           </div>
         </div>
@@ -53,7 +53,7 @@ export default function Home() {
           <div className="sticky top-20 flex text-white col-span-4">
             <div className="h-12 w-1 mt-4 mr-14 bg-red-500" />
             <div className="flex flex-col">
-              <h2 className={`text-[52px] font-semibold ${raleway.className}`}>
+              <h2 className={`text-[52px] pb-5 leading-tight font-semibold ${raleway.className}`}>
                 Nuestros <br /> Servicios
               </h2>
               <p className="text-gray-300 text-md">

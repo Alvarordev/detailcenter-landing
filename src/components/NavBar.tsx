@@ -41,7 +41,7 @@ const NavBar = () => {
           </ul>
         </div>
 
-        <div className="px-6 py-3 cursor-pointer border border-red-500">
+        <div className="px-6 py-3 cursor-pointer border border-red-500 hover:bg-red-500 hover:text-white transition-all">
           Contactanos
         </div>
       </nav>
