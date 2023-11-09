@@ -2,26 +2,55 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.move-in {
+  animation: fade forwards 0.5s ease-out;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+@keyframes fade {
+  0% {
+    opacity: 0;
+    transform: translateX(-10%);
+  }
+
+  5% {
+    opacity: 0;
+    transform: translateX(-10%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.slow-motion {  
+  transition-delay: .3s;
+  transition-duration: 2s;
+  transition-timing-function: cubic-bezier(.4,0,.2,1);
+}
+
+.fading-slow-mo {
+  animation: fade-slow forwards 2.8s ease-in;
+}
+
+@keyframes fade-slow {
+  0% {
+    opacity: 0;
+    transform: translateX(10%);
+  }
+
+  5% {
+    opacity: 0;
+  }
+
+ 
+  70% {
+    opacity: 0.50;
+    transform: translateX(0);
+  }
+
+  100% {
+    opacity: 1;
+
+  }
 }
