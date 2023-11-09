@@ -1,10 +1,14 @@
-'use client'
+"use client";
 
 import { createContext, useContext, useEffect, useState } from "react";
 
+interface Props {
+  children: React.ReactNode;
+}
+
 const IsClientCtx = createContext(false);
 
-export const IsClientCtxProvider = ({ children }) => {
+export const IsClientCtxProvider: React.FC<Props> = ({ children }) => {
   const [isClient, setIsClient] = useState(false);
   useEffect(() => setIsClient(true), []);
   return (
