@@ -31,7 +31,7 @@ const NavBar = () => {
       id="navbar"
     >
       <nav className="lg:max-w-[1200px] mx-auto flex justify-between items-center py-1 text-sm font-medium">
-        <div className="font-bold text-xl">Detail Center</div>
+        <div className="font-bold text-xl">DETAIL CENTER</div>
 
         <div>
           <ul className="flex gap-x-10 ">

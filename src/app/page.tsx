@@ -44,11 +44,7 @@ export default function Home() {
 
       <section className="bg-[#1a1a1a] min-h-[600px] w-full relative antialiased ">
         <div className="w-full h-[700px]">
-          <Image
-            src="/car-washing.avif"
-            alt="washing"
-            fill
-          />
+          <Image src="/car-washing.avif" alt="washing" fill />
         </div>
       </section>
 
@@ -60,7 +56,7 @@ export default function Home() {
               <h2 className={`text-[52px] font-semibold ${raleway.className}`}>
                 Nuestros <br /> Servicios
               </h2>
-              <p>
+              <p className="text-gray-300 text-md">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
                 porro dicta animi quos at provident atque? Omnis, magni
                 cupiditate? Laudantium nam cupiditate voluptates vitae veniam
@@ -69,19 +65,24 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="col-span-1"/>
+          <div className="col-span-1" />
 
           <div className="col-span-7 min-h-[2000px] flex flex-col gap-16">
-            <div className="flex gap-10">
+            <div className="flex gap-10 fade-in">
               <div className="min-w-[260px] max-w-[260px]">
-                <Image height={335} width={260} src="/paint-fixing.webp" alt="paint-fixing" />
+                <Image
+                  height={335}
+                  width={260}
+                  src="/paint-fixing.webp"
+                  alt="paint-fixing"
+                />
               </div>
 
               <div>
                 <h3 className="text-xl font-semibold mb-5">
                   Correcion de Pintura
                 </h3>
-                <p className="text-[14px] text-gray-300">
+                <p className="text-sm text-gray-300">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Dignissimos, perspiciatis porro eius, labore, ratione sequi
                   cupiditate recusandae voluptatum deserunt voluptatibus nulla
@@ -91,17 +92,21 @@ export default function Home() {
               </div>
             </div>
 
-
             <div className="flex gap-10">
               <div className="min-w-[260px] max-w-[260px]">
-                <Image height={335} width={260} src="/ceramics.avif" alt="paint-fixing" />
+                <Image
+                  height={335}
+                  width={260}
+                  src="/ceramics.avif"
+                  alt="paint-fixing"
+                />
               </div>
 
               <div>
                 <h3 className="text-xl font-semibold mb-5">
                   Aplicación de cerámicos
                 </h3>
-                <p className="text-[14px] text-gray-300">
+                <p className="text-sm text-gray-300">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Dignissimos, perspiciatis porro eius, labore, ratione sequi
                   cupiditate recusandae voluptatum deserunt voluptatibus nulla
@@ -113,14 +118,17 @@ export default function Home() {
 
             <div className="flex gap-10">
               <div className="min-w-[260px] max-w-[260px]">
-               <Image height={335} width={260} src="/inside-cleaning.jpg" alt="paint-fixing" />
+                <Image
+                  height={335}
+                  width={260}
+                  src="/inside-cleaning.jpg"
+                  alt="paint-fixing"
+                />
               </div>
 
               <div>
-                <h3 className="text-xl font-semibold mb-5">
-                  Lavado de Salon
-                </h3>
-                <p className="text-[14px] text-gray-300">
+                <h3 className="text-xl font-semibold mb-5">Lavado de Salon</h3>
+                <p className="text-sm text-gray-300">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Dignissimos, perspiciatis porro eius, labore, ratione sequi
                   cupiditate recusandae voluptatum deserunt voluptatibus nulla
@@ -132,14 +140,19 @@ export default function Home() {
 
             <div className="flex gap-10">
               <div className="min-w-[260px] max-w-[260px]">
-               <Image height={335} width={260} src="/washing.jpg" alt="paint-fixing" />
+                <Image
+                  height={335}
+                  width={260}
+                  src="/washing.jpg"
+                  alt="paint-fixing"
+                />
               </div>
 
               <div>
                 <h3 className="text-xl font-semibold mb-5">
                   Lavado profesional de flotas
                 </h3>
-                <p className="text-[14px] text-gray-300">
+                <p className="text-sm text-gray-300">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Dignissimos, perspiciatis porro eius, labore, ratione sequi
                   cupiditate recusandae voluptatum deserunt voluptatibus nulla
@@ -152,22 +165,10 @@ export default function Home() {
         </div>
 
         <div className="mt-36">
-          <Slider/>
+          <Slider />
         </div>
       </section>
 
-      <section className="min-h-[700px] bg-[#1a1a1a] text-white">
-        <div className="grid grid-cols-12 max-w-[1200px] mx-auto pt-32">
-          <div className="col-span-4">
-            <h3>Contacta con nosotros</h3>
-          </div>
-          <div/>
-
-          <div>
-
-          </div>
-        </div>
-      </section>
     </main>
   );
 }

@@ -4,6 +4,7 @@ import "./globals.css";
 import NavBar from "@/components/NavBar";
 import { montserrat } from "@/ui/fonts";
 import { IsClientCtxProvider } from "@/context/isClientContxt";
+import Footer from "@/components/Fotter";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -23,6 +24,7 @@ export default function RootLayout({
         <IsClientCtxProvider>
           <NavBar />
           {children}
+          <Footer/>
         </IsClientCtxProvider>
       </body>
     </html>
