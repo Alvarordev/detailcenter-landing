@@ -1,5 +1,6 @@
 "use client";
 
+import { MoveIcon } from "@/ui/Icons";
 import Image from "next/image";
 import { useState } from "react";
 
@@ -51,12 +52,14 @@ const Slider = () => {
               />
             </div>
             <div
-              className="absolute top-0 bottom-0 w-1 bg-red-500 cursor-ew-resize"
+              className="absolute top-0 bottom-0  bg-red-500 cursor-ew-resize"
               style={{
                 left: `calc(${sliderPosition}% - 1px)`,
               }}
             >
-              <div className="bg-red-500 absolute rounded-full h-6 w-6 -left-[10px] top-[calc(50%)]" />
+              <div className="bg-red-500 absolute rounded-full h-16 w-16 -left-[32px] top-[calc(50%-10px)] flex justify-center items-center" >
+                <MoveIcon size="36"/>
+              </div>
             </div>
           </div>
         </div>
