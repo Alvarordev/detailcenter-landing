@@ -4,12 +4,12 @@ import { raleway } from "@/ui/fonts";
 const Footer = () => {
   return (
     <div className="w-full bg-[#1a1a1a] text-white">
-      <div className="max-w-[1280px] w-full mx-auto pt-32 mb-40 px-8 grid grid-cols-12">
+      <div className="lg:max-w-[1280px] px-8 w-full mx-auto pt-32 mb-40 flex flex-col gap-8 lg:gap-0 lg:grid lg:grid-cols-12">
         <div className="col-span-5">
           <div className="sticky top-20 flex text-white col-span-4">
-            <div className="h-12 w-1 mt-4 mr-14 bg-red-500" />
+            <div className="h-12 w-1 mt-4 mr-14 bg-red-500 hidden lg:block" />
             <div className="flex flex-col">
-              <h2 className={`text-[52px] font-semibold ${raleway.className} mb-6`}>
+              <h2 className={`text-4xl  lg:text-[52px] pb-5 leading-tight font-semibold ${raleway.className}`}>
                 DETAIL CENTER
               </h2>
               <p className="text-gray-300 text-md">

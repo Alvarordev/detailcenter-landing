@@ -1,14 +1,15 @@
 import Slider from "@/components/Slider";
 import { raleway } from "@/ui/fonts";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="flex flex-col ">
-      <section className="min-h-[600px] bg-gray-200 relative overflow-x-hidden">
+    <main >
+      <section className="bg-gray-200 relative w-full overflow-hidden">
         <div className="w-full h-32"></div>
 
-        <div className="relative z-20 p-8 lg:max-w-[1280px] mx-auto">
+        <div className="px-8 overflow-hidden relative z-20 p-8 lg:max-w-[1280px] mx-auto">
           <div className="flex move-in">
             <div className="h-12 w-1 mt-4 mr-14 bg-red-500" />
             <h1 className={`text-[52px] font-bold ${raleway.className}`}>
@@ -18,12 +19,15 @@ export default function Home() {
         </div>
 
         <div className="lg:max-w-[1280px] mx-auto relative flex z-20 px-8 mb-24 move-in">
-          <div className="lg:ml-16 bg-red-500 text-white w-[200px] flex items-center justify-center py-5 transition-all font-medium cursor-pointer hover:saturate-100 hover:translate-x-1 hover:-translate-y-1">
-            Contactanos
-          </div>
+          <Link href={'/contacto'}>
+            <div className="lg:ml-16 bg-red-500 text-white w-[200px] flex items-center justify-center py-5 transition-all font-medium cursor-pointer hover:saturate-100 hover:translate-x-1 hover:-translate-y-1">
+              Contáctanos
+            </div>
+          
+          </Link>
         </div>
 
-        <div className="lg:max-w-[1200px] mx-auto text-[13px] font-medium flex pl-14">
+        <div className="lg:max-w-[1200px] mx-auto text-[13px] font-medium flex pl-14 pb-14">
           <div className="mr-20">
             <h3>contacto@detailcenter.pe</h3>
             <span className="text-red-400">934-963-162</span>
@@ -51,16 +55,23 @@ export default function Home() {
       <section className="bg-[#1a1a1a] text-white w-full antialiased pt-20">
         <div className="lg:max-w-[1280px] grid lg:grid-cols-12 lg:items-start lg:justify-between mx-auto px-8">
           <div className="sticky top-20 flex text-white col-span-4">
-            <div className="h-12 w-1 mt-4 mr-14 bg-red-500" />
+            <div className="h-12 w-4 mt-4 mr-14 bg-red-500" />
             <div className="flex flex-col">
-              <h2 className={`text-[52px] pb-5 leading-tight font-semibold ${raleway.className}`}>
+              <h2
+                className={`text-[52px] pb-5 leading-tight font-semibold ${raleway.className}`}
+              >
                 Nuestros <br /> Servicios
               </h2>
-              <p className="text-gray-300 text-md">
+              <p className="text-gray-300 text-md mb-12">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
                 porro dicta animi quos at provident atque? Omnis, magni
                 cupiditate? Laudantium nam cupiditate voluptates vitae veniam
                 inventore soluta quam porro aliquid!
+              </p>
+
+              <p className="font-medium text-lg">Dirección:</p>
+              <p className="font-medium text-red-500 text-lg">
+                Av Colina 713 - Surquillo
               </p>
             </div>
           </div>
@@ -169,6 +180,33 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="min-h-[600px] bg-gray-200 w-full ">
+        <div className="grid lg:grid-cols-12 max-w-[1280px] w-full mx-auto py-32">
+          <div className="sticky top-20 flex col-span-5">
+            <div className="h-12 w-4 mt-4 mr-14 bg-red-500" />
+            <div className="flex flex-col">
+              <h2
+                className={`text-[52px] pb-5 leading-tight font-semibold ${raleway.className}`}
+              >
+                Sobre Nosotros
+              </h2>
+              <p className="text-gray-9900 text-md">
+                Somos un centro de detailing automotriz especializado en la
+                limpieza y detallado de vehículos, brindando servicios con un
+                equipo de jóvenes profesionales y especialistas de primer nivel.
+                Nos destacamos por nuestro compromiso y dedicación al cuidado
+                integral de tu vehículo
+              </p>
+            </div>
+          </div>
+
+          <div className="col-span-1"></div>
+
+          <div className="col-span-6 relative h-[480px]">
+              <Image src={'/about-us.jpg'} alt="" fill priority/>
+          </div>
+        </div>
+      </section>
     </main>
   );
 }

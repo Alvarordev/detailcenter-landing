@@ -1,12 +1,9 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import "./globals.css";
-import NavBar from "@/components/NavBar";
-import { montserrat } from "@/ui/fonts";
 import { IsClientCtxProvider } from "@/context/isClientContxt";
-import Footer from "@/components/Fotter";
-
-const inter = Inter({ subsets: ["latin"] });
+import { montserrat } from "@/ui/fonts";
+import NavBar from "@/components/NavBar";
+import Footer from "@/components/Footer";
+import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Detail Center | auto detailing",
