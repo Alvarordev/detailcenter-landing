@@ -3,7 +3,7 @@ import { raleway } from "@/ui/fonts";
 
 const Footer = () => {
   return (
-    <div className="w-full bg-[#1a1a1a] text-white">
+    <div className="w-full bg-[#1a1a1a] text-white overflow-hidden">
       <div className="lg:max-w-[1280px] px-8 w-full mx-auto pt-32 mb-40 flex flex-col gap-8 lg:gap-0 lg:grid lg:grid-cols-12">
         <div className="col-span-5">
           <div className="sticky top-20 flex text-white col-span-4">
