@@ -27,7 +27,7 @@ export default function Home() {
           </Link>
         </div>
 
-        <div className="lg:max-w-[1200px] mx-auto text-[13px] font-medium flex flex-col-reverse text-center lg:flex-row lg:pl-14 pb-14">
+        <div className="lg:max-w-[1200px] mx-auto text-[13px] font-medium flex flex-col-reverse text-center md:text-left lg:flex-row lg:pl-14 pb-14">
           <div className="lg:mr-20">
             <h3>contacto@detailcenter.pe</h3>
             <span className="text-red-400">934-963-162</span>

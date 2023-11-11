@@ -42,7 +42,7 @@ const Contact = () => {
         </p>
       </section>
 
-      <section className="bg-gray-100 overflow-hidden">
+      {/* <section className="bg-gray-100 overflow-hidden">
         <div className="lg:max-w-[1280px] w-full mx-auto grid lg:grid-cols-12 pt-16 pb-32 z-20 relative px-12 ">
           <div className="sticky top-20 flex text-black col-span-4">
             <div className="h-12 w-1 mt-2 mr-10 bg-red-500" />
@@ -55,7 +55,7 @@ const Contact = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
     </main>
   );
 };

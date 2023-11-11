@@ -2,6 +2,7 @@
 
 import { useIsClient } from "@/context/isClientContxt";
 import { FacebookIcon, InstagramIcon, MenuIcon } from "@/ui/Icons";
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
@@ -51,15 +52,15 @@ const NavBar = () => {
 
   return (
     <div
-      className={`fixed w-full p-8 bg-gray-200 z-40 transition-all duration-300 ${
+      className={`fixed w-full px-8 py-7 bg-gray-200 z-40 transition-all duration-300 ${
         hiddenNavBar ? "h-screen bg-white" : ""
       }`}
       id="navbar"
     >
-      <nav className="flex flex-col lg: py-1 text-sm font-medium">
+      <nav className="flex flex-col text-sm font-medium">
         <div className="lg:max-w-[1200px] w-full lg:mx-auto flex justify-between items-center ">
           <Link href={"/"} className="font-bold text-xl">
-            DETAIL CENTER
+            <Image src="/detail-center-logo.png" alt="" height={56} width={108}/>
           </Link>
 
           <div className="hidden lg:block">
