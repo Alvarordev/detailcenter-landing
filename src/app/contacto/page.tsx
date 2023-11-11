@@ -23,9 +23,10 @@ const Contact = () => {
 
           <div className="col-span-7 pt-3">
             <p className="text-lg pl-6 pr-2 lg:p-0">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum
-              cum, nobis consequuntur totam tempora maiores, quaerat molestias
-              qui quae sint mollitia veritatis!
+              ¡Si hay algo en lo que podemos ayudarte, por favor, utiliza el
+              boton a continuación para ponerte en contacto con nosotros via Whatsapp!
+              Si deseas obtener información sobre la solicitud de un presupuesto
+              o reservar un servicio, no dudes en escribirnos. ¡Estamos aquí para ayudarte!
             </p>
 
             <div className="pt-12 lg:flex">

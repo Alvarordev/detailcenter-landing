@@ -1,4 +1,5 @@
-import Slider from "@/components/Slider";
+import AboutSection from "@/components/Landing/AboutSection";
+import ServicesSection from "@/components/Landing/ServicesSection";
 import { raleway } from "@/ui/fonts";
 import Image from "next/image";
 import Link from "next/link";
@@ -12,18 +13,19 @@ export default function Home() {
         <div className="px-8 overflow-hidden relative z-20 py-2 lg:py-8 lg:max-w-[1280px] mx-auto">
           <div className="flex move-in">
             <div className="h-9 w-1 mr-4 lg:h-12 lg:mt-2 lg:mr-10 bg-red-500" />
-            <h1 className={`text-4xl lg:max-w-[600px] lg:text-[52px] pb-5 leading-tight font-bold ${raleway.className}`}>
+            <h1
+              className={`text-4xl lg:max-w-[600px] lg:text-[52px] pb-5 leading-tight font-bold ${raleway.className}`}
+            >
               Máximo Cuidado para tu Vehículo
             </h1>
           </div>
         </div>
 
         <div className="w-full lg:max-w-[1280px] mx-auto relative z-20 px-8 mb-24 move-in">
-          <Link href={'/contacto'}>
+          <Link href={"/contacto"}>
             <div className="lg:ml-16 bg-red-500 text-white w-full lg:w-[200px] flex items-center justify-center py-5 transition-all font-medium cursor-pointer hover:saturate-100 hover:translate-x-1 hover:-translate-y-1">
               Contáctanos
             </div>
-          
           </Link>
         </div>
 
@@ -46,167 +48,15 @@ export default function Home() {
         </p>
       </section>
 
-      <section className="bg-[#1a1a1a] h-[300px] lg:min-h-[600px] w-full relative antialiased ">
-        <div className="w-full h-[700px]">
+      <section className="bg-[#1a1a1a] h-[300px] lg:min-h-[800px] w-full relative antialiased ">
+        <div className="w-full h-[700px] ">
           <Image src="/car-washing.avif" alt="washing" fill />
         </div>
       </section>
 
-      <section className="bg-[#1a1a1a] text-white w-full antialiased pt-20">
-        <div className="lg:max-w-[1280px] flex flex-col lg:grid lg:grid-cols-12 lg:items-start lg:justify-between mx-auto px-8">
-          <div className="lg:sticky top-20 flex text-white col-span-4">
-            <div className="h-12 w-4 mt-4 mr-14 bg-red-500" />
-            <div className="flex flex-col">
-              <h2
-                className={`text-[52px] pb-5 leading-tight font-semibold ${raleway.className}`}
-              >
-                Nuestros <br /> Servicios
-              </h2>
-              <p className="text-gray-300 text-md mb-12">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
-                porro dicta animi quos at provident atque? Omnis, magni
-                cupiditate? Laudantium nam cupiditate voluptates vitae veniam
-                inventore soluta quam porro aliquid!
-              </p>
+      <ServicesSection/>
 
-              <p className="font-medium text-lg">Dirección:</p>
-              <p className="font-medium text-red-500 text-lg">
-                Av Colina 713 - Surquillo
-              </p>
-            </div>
-          </div>
-
-          <div className="col-span-1" />
-
-          <div className="col-span-7 min-h-[2000px] flex flex-col gap-16">
-            <div className="flex flex-col lg:flex-row gap-10 fade-in">
-              <div className="min-w-[260px] max-w-[260px]">
-                <Image
-                  height={335}
-                  width={260}
-                  src="/paint-fixing.webp"
-                  alt="paint-fixing"
-                />
-              </div>
-
-              <div>
-                <h3 className="text-xl font-semibold mb-5">
-                  Correcion de Pintura
-                </h3>
-                <p className="text-sm text-gray-300">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Dignissimos, perspiciatis porro eius, labore, ratione sequi
-                  cupiditate recusandae voluptatum deserunt voluptatibus nulla
-                  tenetur nostrum? Ad alias commodi totam tempore exercitationem
-                  voluptate.
-                </p>
-              </div>
-            </div>
-
-            <div className="flex gap-10 flex-col lg:flex-row ">
-              <div className="min-w-[260px] max-w-[260px]">
-                <Image
-                  height={335}
-                  width={260}
-                  src="/ceramics.avif"
-                  alt="paint-fixing"
-                />
-              </div>
-
-              <div>
-                <h3 className="text-xl font-semibold mb-5">
-                  Aplicación de cerámicos
-                </h3>
-                <p className="text-sm text-gray-300">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Dignissimos, perspiciatis porro eius, labore, ratione sequi
-                  cupiditate recusandae voluptatum deserunt voluptatibus nulla
-                  tenetur nostrum? Ad alias commodi totam tempore exercitationem
-                  voluptate.
-                </p>
-              </div>
-            </div>
-
-            <div className="flex gap-10 flex-col lg:flex-row ">
-              <div className="min-w-[260px] max-w-[260px]">
-                <Image
-                  height={335}
-                  width={260}
-                  src="/inside-cleaning.jpg"
-                  alt="paint-fixing"
-                />
-              </div>
-
-              <div>
-                <h3 className="text-xl font-semibold mb-5">Lavado de Salon</h3>
-                <p className="text-sm text-gray-300">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Dignissimos, perspiciatis porro eius, labore, ratione sequi
-                  cupiditate recusandae voluptatum deserunt voluptatibus nulla
-                  tenetur nostrum? Ad alias commodi totam tempore exercitationem
-                  voluptate.
-                </p>
-              </div>
-            </div>
-
-            <div className="flex gap-10 flex-col lg:flex-row ">
-              <div className="min-w-[260px] max-w-[260px]">
-                <Image
-                  height={335}
-                  width={260}
-                  src="/washing.jpg"
-                  alt="paint-fixing"
-                />
-              </div>
-
-              <div>
-                <h3 className="text-xl font-semibold mb-5">
-                  Lavado profesional de flotas
-                </h3>
-                <p className="text-sm text-gray-300">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Dignissimos, perspiciatis porro eius, labore, ratione sequi
-                  cupiditate recusandae voluptatum deserunt voluptatibus nulla
-                  tenetur nostrum? Ad alias commodi totam tempore exercitationem
-                  voluptate.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="mt-36">
-          <Slider />
-        </div>
-      </section>
-
-      <section className="min-h-[600px] bg-gray-200 w-full">
-        <div className="flex flex-col lg:grid lg:grid-cols-12 max-w-[1280px] w-full mx-auto py-32">
-          <div className="flex col-span-5">
-            <div className="h-12 w-4 mt-4 mr-14 bg-red-500" />
-            <div className="flex flex-col">
-              <h2
-                className={`text-[52px] pb-5 leading-tight font-semibold ${raleway.className}`}
-              >
-                Sobre Nosotros
-              </h2>
-              <p className="text-gray-9900 text-md">
-                Somos un centro de detailing automotriz especializado en la
-                limpieza y detallado de vehículos, brindando servicios con un
-                equipo de jóvenes profesionales y especialistas de primer nivel.
-                Nos destacamos por nuestro compromiso y dedicación al cuidado
-                integral de tu vehículo
-              </p>
-            </div>
-          </div>
-
-          <div className="col-span-1"></div>
-
-          <div className="col-span-6 relative h-[480px]">
-              <Image src={'/about-us.jpg'} alt="" fill priority/>
-          </div>
-        </div>
-      </section>
+      <AboutSection/>
     </main>
   );
 }
