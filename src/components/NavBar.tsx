@@ -60,7 +60,12 @@ const NavBar = () => {
       <nav className="flex flex-col text-sm font-medium">
         <div className="lg:max-w-[1200px] w-full lg:mx-auto flex justify-between items-center ">
           <Link href={"/"} className="font-bold text-xl">
-            <Image src="/detail-center-logo.png" alt="" height={56} width={108}/>
+            <Image
+              src="/detail-center-logo.png"
+              alt=""
+              height={56}
+              width={108}
+            />
           </Link>
 
           <div className="hidden lg:block">
@@ -78,9 +83,9 @@ const NavBar = () => {
             </ul>
           </div>
 
-          <div className="hidden lg:block  px-6 py-3 cursor-pointer border border-red-500 hover:bg-red-500 hover:text-white transition-all">
+          <Link href={'/contact'} className="hidden lg:block  px-6 py-3 cursor-pointer border border-red-500 hover:bg-red-500 hover:text-white transition-all">
             Contáctanos
-          </div>
+          </Link>
 
           <div
             className="border border-red-500 px-3 py-3 lg:hidden"
@@ -90,7 +95,10 @@ const NavBar = () => {
           </div>
         </div>
 
-        <div className={`${hiddenNavBar ? '' : 'hidden'}`} onClick={() => setHiddenNavBar(!hiddenNavBar)}>
+        <div
+          className={`${hiddenNavBar ? "" : "hidden"}`}
+          onClick={() => setHiddenNavBar(!hiddenNavBar)}
+        >
           <ul className="mt-12 text-xl font-medium flex flex-col gap-2">
             {routes.map((route) => (
               <li
