@@ -7,7 +7,7 @@ const Contact = () => {
       <section className="bg-gray-200 relative overflow-hidden">
         <div className="w-full h-32" />
 
-        <div className="lg:max-w-[1280px] w-full mx-auto flex flex-col lg:grid lg:grid-cols-12 pt-16 pb-32 z-20 relative px-12 ">
+        <div className="lg:max-w-[1280px] w-full mx-auto flex flex-col lg:grid lg:grid-cols-12 pt-6 lg:pt-16 pb-32 z-20 relative px-12 ">
           <div className="sticky top-20 flex text-black col-span-4">
             <div className="h-9 w-1 mr-4 lg:h-12 lg:mt-2 lg:mr-10 bg-red-500" />
             <div className="flex flex-col">

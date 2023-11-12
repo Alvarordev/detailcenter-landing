@@ -83,7 +83,7 @@ const NavBar = () => {
             </ul>
           </div>
 
-          <Link href={'/contact'} className="hidden lg:block  px-6 py-3 cursor-pointer border border-red-500 hover:bg-red-500 hover:text-white transition-all">
+          <Link href={'/contacto'} className="hidden lg:block  px-6 py-3 cursor-pointer border border-red-500 hover:bg-red-500 hover:text-white transition-all">
             Contáctanos
           </Link>
 
