@@ -1,5 +1,6 @@
 import { FacebookIcon, InstagramIcon } from "@/ui/Icons";
 import { raleway } from "@/ui/fonts";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -31,10 +32,10 @@ const Footer = () => {
             <span>Av Colina 713 - Surquillo</span>
           </div>
           <div className="flex flex-col my-8 gap-8">
-            <div className="flex gap-3 text-red-500">
+            <Link href={'https://www.instagram.com/detailcenter.pe/'} className="flex gap-3 text-red-500">
               <InstagramIcon size="28" />
-              <span className="text-white">@detailcenterpe</span>
-            </div>
+              <span className="text-white">@detailcenter.pe</span>
+            </Link>
 
             <div className="flex gap-3 text-red-500">
               <FacebookIcon size="28" />
