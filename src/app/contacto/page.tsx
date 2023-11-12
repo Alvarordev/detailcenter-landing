@@ -4,10 +4,10 @@ import { raleway } from "@/ui/fonts";
 const Contact = () => {
   return (
     <main className="min-h-screen bg-gray-100">
-      <section className="bg-gray-200 relative overflow-hidden">
+      <section className="bg-gray-200 relative h-screen overflow-hidden">
         <div className="w-full h-32" />
 
-        <div className="lg:max-w-[1280px] w-full mx-auto flex flex-col lg:grid lg:grid-cols-12 pt-6 lg:pt-16 pb-32 z-20 relative px-12 ">
+        <div className="lg:max-w-[1280px] w-full mx-auto flex flex-col lg:grid lg:grid-cols-12 pt-6 lg:pt-16 pb-32 z-20 relative px-8 lg:px-12 ">
           <div className="sticky top-20 flex text-black col-span-4">
             <div className="h-9 w-1 mr-4 lg:h-12 lg:mt-2 lg:mr-10 bg-red-500" />
             <div className="flex flex-col">
@@ -22,7 +22,7 @@ const Contact = () => {
           <div className="col-span-1" />
 
           <div className="col-span-7 pt-3">
-            <p className="text-lg pl-6 pr-2 lg:p-0">
+            <p className="text-md lg:text-lg pl-6 pr-2 lg:p-0">
               ¡Si hay algo en lo que podemos ayudarte, por favor, utiliza el
               boton a continuación para ponerte en contacto con nosotros via Whatsapp!
               Si deseas obtener información sobre la solicitud de un presupuesto

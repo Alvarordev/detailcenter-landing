@@ -3,11 +3,11 @@ import { raleway } from "@/ui/fonts";
 
 const About = () => {
   return (
-    <main className="min-h-screen bg-gray-100">
-      <section className="bg-gray-200 relative overflow-hidden">
+    <main className="min-h-screen bg-gray-100 ">
+      <section className="bg-gray-200 relative h-screen overflow-hidden">
         <div className="w-full h-32" />
 
-        <div className="max-w-[1280px] w-full mx-auto grid lg:grid-cols-12 pt-6 lg:pt-16 pb-32 z-20 relative px-12 ">
+        <div className="max-w-[1280px] w-full mx-auto grid lg:grid-cols-12 pt-6 lg:pt-16 pb-32 z-20 relative px-8 lg:px-12 ">
           <div className="sticky top-20 flex text-black col-span-5">
             <div className="h-9 w-1 mr-4 lg:h-12 lg:mt-2 lg:mr-10 bg-red-500"/>
             <div className="flex flex-col">
@@ -22,7 +22,7 @@ const About = () => {
           <div className="col-span-1" />
 
           <div className="col-span-6 pt-3">
-            <p className="text-lg pb-12 pl-6 pr-1 lg:px-0">
+            <p className="text-md lg:text-lg pb-12 pl-6 pr-1 lg:px-0">
               Somos un centro de detailing automotriz especializado en la
               limpieza y detallado de vehículos, brindando servicios con un
               equipo de jóvenes profesionales y especialistas de primer nivel.
