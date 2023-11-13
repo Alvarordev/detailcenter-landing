@@ -118,7 +118,7 @@ const NavBar = () => {
             <span>934-963-162</span>
             <a target="_blank" href={'https://www.instagram.com/detailcenter.pe/'} className="flex gap-3 items-center text-red-500 my-5">
               <InstagramIcon size="28" />
-              <span className="text-black">@detailcenterpe</span>
+              <span className="text-black">@detailcenter.pe</span>
             </a>
 
             <div className="flex gap-3 items-center text-red-500">
