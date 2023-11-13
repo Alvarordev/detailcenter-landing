@@ -116,10 +116,10 @@ const NavBar = () => {
             <span className="mb-3 text-gray-500">Contacto</span>
             <span>contacto@detailcenter.pe</span>
             <span>934-963-162</span>
-            <div className="flex gap-3 items-center text-red-500 my-5">
+            <a target="_blank" href={'https://www.instagram.com/detailcenter.pe/'} className="flex gap-3 items-center text-red-500 my-5">
               <InstagramIcon size="28" />
               <span className="text-black">@detailcenterpe</span>
-            </div>
+            </a>
 
             <div className="flex gap-3 items-center text-red-500">
               <FacebookIcon size="28" />
