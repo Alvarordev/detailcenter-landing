@@ -1,4 +1,3 @@
-import { WhatsappIcon } from "@/ui/Icons";
 import { raleway } from "@/ui/fonts";
 
 const About = () => {
