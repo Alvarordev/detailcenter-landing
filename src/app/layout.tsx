@@ -6,7 +6,7 @@ import Footer from "@/components/Footer";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Detail Center | auto detailing",
+  title: "Detail Center | Detailing Automotriz en Lima",
   description: "Somos un car detailing especializado en la limpieza y detallado de tu vehículo",
 };
 
