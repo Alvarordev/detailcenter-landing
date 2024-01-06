@@ -22,6 +22,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <meta
+          name="google-site-verification"
+          content="EnlLu16ZAJpL3ekksr7clLtPGsKtrVKn1_4d4WkRuA4"
+        />
+      </head>
       <body className={`${montserrat.className}`}>
         <IsClientCtxProvider>
           <NavBar />
