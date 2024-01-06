@@ -7,7 +7,12 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Detail Center | Detailing Automotriz en Lima",
-  description: "Somos un car detailing especializado en la limpieza y detallado de tu vehículo",
+  description:
+    "Somos un car detailing especializado en la limpieza y detallado de tu vehículo",
+  other: {
+    name: "google-site-verification",
+    content: "EnlLu16ZAJpL3ekksr7clLtPGsKtrVKn1_4d4WkRuA4",
+  },
 };
 
 export default function RootLayout({
@@ -21,7 +26,7 @@ export default function RootLayout({
         <IsClientCtxProvider>
           <NavBar />
           {children}
-          <Footer/>
+          <Footer />
         </IsClientCtxProvider>
       </body>
     </html>
