@@ -6,9 +6,9 @@ import Footer from "@/components/Footer";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Detail Center | Detailing Automotriz en Lima",
+  title: "Detail Center | Car wash & Auto Detailing en Lima",
   description:
-    "Somos un car detailing especializado en la limpieza y detallado de tu vehículo",
+    "Somos un centro especializado en cuidado automotriz, contamos con servicio de car wash y auto detailing, brindando servicios con un equipo de jóvenes profesionales y especialistas de primer nivel. Nos destacamos por nuestro compromiso y dedicación al cuidado integral de tu vehículo.",
   other: {
     name: "google-site-verification",
     content: "EnlLu16ZAJpL3ekksr7clLtPGsKtrVKn1_4d4WkRuA4",
